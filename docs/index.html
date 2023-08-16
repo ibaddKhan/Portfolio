@@ -18,7 +18,7 @@
         font-family: "Montserrat", sans-serif;
         scroll-behavior: smooth;
       }
-      li:hover {
+      a:hover {
         color: rgb(13, 52, 68);
         font-size: x-large;
         transition: 0.3s ease 0.2s, transition-delay 0s;
@@ -27,108 +27,103 @@
       }
     </style>
   </head>
-  <body class="bg-cyan-600">
-    <div class="flex flex-wrap">
-        <ul class="flex  p-5">
-            <span class="flex text-lg mt-2 text-white flex-wrap">
-        <li class="text-3xl ml-12  text-white"><b>Portfolio</b></li>
-           <a href="#home" class="cursor-pointer ml-96"><li>Home</li></a>
-          <a href="#project" class="cursor-pointer ml-16"><li>Projects</li></a>
-          <a href="#contact" class="cursor-pointer ml-16"><li>Contact</li></a></li></span>
-        </ul>
+  <body class="bg-sky-600 text-white">
+    <nav class="flex justify-between flex-wrap items-center p-4">
+      <div class="text-white text-2xl font-bold">Portfolio</div>
+      <div class="flex space-x-7 mr-8 text-lg">
+        <a href="#" class="text-white">Home</a>
+        <a href="#" class="text-white">Projects</a>
+        <a href="#" class="text-white">Contact</a>
+      </div>
+    </nav>
+    <div class="bg-sky-900 flex flex-wrap align-middle justify-center">
+      <img class="p-7 ml-1" src="./assets/Meri photo hai.jpg" width="230px" />
+      <div class="text-center p-32">
+        <p class="text-4xl w-96 text-white capitalize text-center">
+          <span><b class="text-yellow-200">Hi,</b></span> I<span
+            class="lowercase"
+          >
+            am </span
+          ><span
+            class="text-4xl font-extrabold hover:text-blue-950 cursor-pointer"
+            >Ibad-Ur-Rehman</span
+          >
+          <br />Frontend Developer
+        </p>
+      </div>
     </div>
-    <div class="bg-sky-900 flex flex-wrap p-9" id="home">
-        <div class="ml-8 mt-0">
+    <div class="bg-sky-950 mt-1">
+      <h1 class="text-3xl font-bold text-center p-6">PROJECTS</h1>
+      <div class="flex flex-wrap space-x-10 align-middle justify-center pb-11">
+        <div>
+          <a
+            target="_blank"
+            href="https://ibadurrehman718.github.io/Food-Delivery-/"
+          >
             <img
-              src="./assets/Meri photo hai.jpg"
-              class="ml-7"
+              class="rounded-md shadow-lg mt-3 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+              src="./assets/project-foodrush.png"
+              width="300px"
               alt=""
-              width="200px"
-            />
-          </div>
-          <div class="mt-36 flex justify-center ml-28">
-            <p class=" text-4xl w-96 text-white capitalize text-center">
-              <span><b class="text-yellow-200">Hi,</b></span> I<span
-                class="lowercase"
-              >
-                am </span
-              ><span class="text-4xl font-extrabold hover:text-blue-950 cursor-pointer">Ibad-Ur-Rehman</span>
-              <br />Frontend Developer
-            </p>
-          </div>
+          /></a>
+        </div>
+        <div>
+          <a
+            href="https://ibadurrehman718.github.io/Salt-And-Pepper-Restaurants-/"
+            target="_blank"
+          >
+            <img
+              class="rounded-md shadow-lg mt-3 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+              src="./assets/project-restaurant .png"
+              width="320px"
+              alt=""
+          /></a>
+        </div>
+        <div>
+          <a
+            target="_blank"
+            href="https://ibadurrehman718.github.io/Noon-App-Clone/dist/"
+          >
+            <img
+              class="rounded-md shadow-lg mt-3 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+              src="./assets/project-noon.png"
+              width="300px"
+              alt=""
+          /></a>
+        </div>
+      </div>
     </div>
 
-    <div class="h-96 mt-1 flex flex-wrap pl-20 bg-sky-950" id="project">
-        <div class="flex justify-center items-center mt-8">
-            <h1 class="text-5xl text-white"><b>Projects</b></h1>
-          </div>
-        <div class="flex mt-5 space-x-8 justify-center flex-wrap">
-            <div  class="mt-3" >
-              <a
-                target="_blank"
-                href="https://ibadurrehman718.github.io/Noon-App-Clone/dist/"
-                ><img
-                  src="./assets/project-noon.png"
-                  class="images"
-                  alt=""
-                  width="300px"
-              /></a>
-            </div>
-            <div class="mt-3 ml-2">
-              <a
-                target="_blank"
-                href="https://ibadurrehman718.github.io/Food-Delivery-/"
-              >
-                <img
-                  src="./assets/project-foodrush.png"
-                  class="images"
-                  alt=""
-                  width="300px"
-              /></a>
-            </div>
-            <div class="mt-3 ml-2 ">
-              <a
-                href="https://ibadurrehman718.github.io/Salt-And-Pepper-Restaurants-/"
-                target="_blank"
-                ><img
-                  src="./assets/project-restaurant .png"
-                  class="images"
-                  alt=""
-                  width="320px"
-              /></a>
-            </div>
-          </div>
-    </div>
-
-    <div class="bg-sky-900 fle text-cyan-50 p-16 mt-1" id="contact">
+    <div class="bg-sky-800 text-cyan-50 p-16" id="contact">
       <div class="p-5">
         <h1 class="text-center text-4xl"><b>Let's work together...</b></h1>
       </div>
-      <div class="flex justify-center gap-5 mt-5">
+      <div class="flex justify-center flex-wrap gap-5 mt-5">
         <i class="fa-brands fa-linkedin text-4xl"></i>
         <a
+          target="_blank"
           href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
         >
           <h3 class="text-3xl"><b>LinkedIn</b></h3></a
         >
         <i class="fa-brands fa-twitter text-4xl"></i>
-        <a href="https://twitter.com/ibadurrehman718"
+        <a target="_blank" href="https://twitter.com/ibadurrehman718"
           ><h3 class="text-3xl"><b>Twitter</b></h3></a
         >
         <i class="fa-solid fa-envelope text-4xl"></i>
-        <a href="mailto:ibadurrehman718@gmail.com"
+        <a target="_blank" href="mailto:ibadurrehman718@gmail.com"
           ><h3 class="text-3xl"><b>Send Mail</b></h3></a
         >
       </div>
 
-      <div class="mt-5 justify-center text-3xl flex gap-6">
+      <div class="mt-5 justify-center flex-wrap text-3xl flex gap-6">
         <i class="fa-brands fa-github text-4xl"></i>
-        <a href="https://github.com/ibadurrehman718"
-          ><h3><b>GitHub</b></h3></a
+        <a target="_blank" href="https://github.com/ibadurrehman718"
+          ><h3 class="text-3xl"><b>GitHub</b></h3></a
         >
         <i class="fa-solid fa-phone text-4xl"></i>
-        <a href="tel:+923111034953"
-          ><h3><b>Call Me</b></h3></a
+        <a target="_blank" href="tel:+923111034953"
+          ><h3 class="text-3xl"><b>Call Me</b></h3></a
         >
       </div>
     </div>
