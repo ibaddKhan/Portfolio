@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       integrity="sha384-..."
       crossorigin="anonymous"
@@ -16,7 +20,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Mono:ital,wght@1,500&display=swap");
       * {
         font-family: "Montserrat", sans-serif;
-        scroll-behavior:smooth;
+        scroll-behavior: smooth;
       }
       a:hover {
         color: rgb(13, 52, 68);
@@ -24,6 +28,36 @@
         transition: 0.3s ease 0.2s, transition-delay 0s;
         text-shadow: 1;
         text-shadow: 8px 5px 4px rgba(46, 84, 255, 0.3);
+      }
+      .animated {
+        display: block;
+        overflow: hidden;
+        border-right: 0.24rem solid black;
+        white-space: nowrap;
+        margin: 0 auto;
+        animation: typing 4s steps(40) infinite,
+          blink-caret 0.75s step-end infinite;
+      }
+      @keyframes typing {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: white;
+        }
+      }
+      .animate__backInLeft {
+        display: inline-block;
+        animation-duration: 1.6s;
       }
     </style>
   </head>
@@ -36,8 +70,12 @@
         <a href="#contact" class="text-white">Contact</a>
       </div>
     </nav>
-    <div class="bg-sky-900 flex flex-wrap align-middle justify-center" >
-      <img class="p-7 ml-1" src="./assets/Meri photo hai.jpg" width="230px" />
+    <div class="bg-sky-900 flex flex-wrap align-middle justify-center">
+      <img
+        class="p-7 ml-1 animate__animated animate__backInLeft"
+        src="./assets/Meri photo hai.jpg"
+        width="230px"
+      />
       <div class="text-center p-32">
         <p class="text-4xl w-96 text-white capitalize text-center">
           <span><b class="text-yellow-200">Hi,</b></span> I<span
@@ -48,13 +86,15 @@
             class="text-4xl font-extrabold hover:text-blue-950 cursor-pointer"
             >Ibad-Ur-Rehman</span
           >
-          <br />Frontend Developer
+          <br /><span class="animated"> Frontend Developer</span>
         </p>
       </div>
     </div>
     <div class="bg-sky-950 mt-1" id="project">
       <h1 class="text-3xl font-bold text-center p-6">PROJECTS</h1>
-      <div class="flex flex-wrap space-x-10 align-middle justify-center pb-11">
+      <div
+        class="flex flex-wrap space-x-10 flex-col align-middle justify-center pb-11"
+      >
         <div>
           <a
             target="_blank"
@@ -87,6 +127,18 @@
             <img
               class="rounded-md shadow-lg mt-3 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
               src="./assets/project-noon.png"
+              width="300px"
+              alt=""
+          /></a>
+        </div>
+        <div>
+          <a
+            target="_blank"
+            href="https://ibadurrehman718.github.io/Calculator/"
+          >
+            <img
+              class="rounded-md shadow-lg mt-3 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+              src="./assets/project-cal.png"
               width="300px"
               alt=""
           /></a>
